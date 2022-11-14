@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <h1 style="font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Science News</h1>
+    <div class="row">
+
+
+            <div *ngFor="let d of sciencenewsDisplay" class="col-lg-3 mt-3 mb-3" style="border-style: double;">
+                <div class="box">
+                    <img src="{{d.urlToImage}}" alt="No image available" srcset="" width="100%">
+                    <h3 style="font-weight: bold;">{{d.title}}</h3>
+                    <a href="{{d.url}}" class="btn btn-sm" style="background-color: rgb(133, 0, 0); color: whitesmoke;">Read more...</a>
+                </div>
+            </div>
+        
+    </div>
+</div>
